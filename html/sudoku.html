@@ -45,6 +45,11 @@
 
     <div class="container-md" style="padding-top: 25px;"> 
         <div id="carouselExampleControls" class="carousel slide w-50 mx-auto" data-bs-ride="carousel" >
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner" style="border-radius: 10px;">
                 <div class="carousel-item active">
                     <img src="../SudokuImg/1.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
@@ -67,43 +72,80 @@
         </div>
     </div> 
 
-    <div class="container fs-4" style="padding-top: 25px;">
-        <p><a class="text-primary fw-bold" style="text-decoration: none;">Sudoku</a> - is a logic-based, combinatorial number-placement puzzle. In classic Sudoku, 
-            the objective is to fill a 9 x 9 grid with digits so that each column, each row, and each of the nine 3 x 3 subgrids that compose the grid 
-            (also called "boxes", "blocks", or "regions") contain all of the digits from 1 to 9. The puzzle setter provides
-            a partially completed grid, which for a well-posed puzzle has a single solution
-        </p>
-        <p>
-            When you click on the "Settings" button, a settings window opens with the ability to
-             enable or disable the timer, highlight repetitions, highlight the same numbers (all functions are initially enabled).
-        </p>
-        <p>
-            When you click on the "Leaders" button, a window opens with a table of the top 10 players for each difficulty.
-        </p>
-        <p>
-            When you click on the "Play" button, a window with a choice of difficulty opens, after choosing
-             a difficulty, a window with the game opens. To win, you need to fill the 9 by 9 grid with numbers so that
-              each row, column and 3 by 3 grid contains all the numbers from 1 to 9. To enter values in empty cells, 
-              you need to select a cell and enter a number from the keyboard.
-        </p>
-        <p>
-            If you enter an incorrect number, it will be highlighted in red, if the item "Highlight repetitions" 
-            is enabled in the settings, conflicting numbers will be highlighted in a column and/or row and/or grid.
-        </p>
-        <p>
-            When you click on a cell with a number and the item "Highlight identical numbers" is enabled in the 
-            settings, all cells with the corresponding number on the entire playing field will be highlighted.
-        </p>
-        <p>
-            When all the fields are filled in with the “Timer” item enabled in the settings, a window will appear asking you to save your result.
-        </p>
-        <p>
-            To save the result, you need to enter a name (without spaces, no longer than 20 characters) and click on the "Save" button, 
-            after which the result will be entered in the leaderboard, and the user will be returned to the main menu.
-        </p>
-        <p>
-            Pressing the "Exit" button will immediately return the user to the main menu.
-        </p>
+    
+    <div class="container fs-4" style="padding: 25px 0;">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Definitions
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <a class="text-primary fw-bold" style="text-decoration: none;">Sudoku</a> - is a logic-based, combinatorial number-placement puzzle. In classic Sudoku, 
+                    the objective is to fill a 9 x 9 grid with digits so that each column, each row, and each of the nine 3 x 3 subgrids that compose the grid 
+                    (also called "boxes", "blocks", or "regions") contain all of the digits from 1 to 9. The puzzle setter provides
+                    a partially completed grid, which for a well-posed puzzle has a single solution
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Элемент аккордеона #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Manual
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                        When you click on the "Settings" button, a settings window opens with the ability to
+                         enable or disable the timer, highlight repetitions, highlight the same numbers (all functions are initially enabled).
+                    </p>
+                    <p>
+                        When you click on the "Leaders" button, a window opens with a table of the top 10 players for each difficulty.
+                    </p>
+                    <p>
+                        When you click on the "Play" button, a window with a choice of difficulty opens, after choosing
+                         a difficulty, a window with the game opens. To win, you need to fill the 9 by 9 grid with numbers so that
+                          each row, column and 3 by 3 grid contains all the numbers from 1 to 9. To enter values in empty cells, 
+                          you need to select a cell and enter a number from the keyboard.
+                    </p>
+                    <p>
+                        If you enter an incorrect number, it will be highlighted in red, if the item "Highlight repetitions" 
+                        is enabled in the settings, conflicting numbers will be highlighted in a column and/or row and/or grid.
+                    </p>
+                    <p>
+                        When you click on a cell with a number and the item "Highlight identical numbers" is enabled in the 
+                        settings, all cells with the corresponding number on the entire playing field will be highlighted.
+                    </p>
+                    <p>
+                        When all the fields are filled in with the “Timer” item enabled in the settings, a window will appear asking you to save your result.
+                    </p>
+                    <p>
+                        To save the result, you need to enter a name (without spaces, no longer than 20 characters) and click on the "Save" button, 
+                        after which the result will be entered in the leaderboard, and the user will be returned to the main menu.
+                    </p>
+                    <p>
+                        Pressing the "Exit" button will immediately return the user to the main menu.
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>

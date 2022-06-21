@@ -12,9 +12,9 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light fs-5">
         <div class="container-md">
-            <a class="navbar-brand" href="index.html">Tavrel Vlad</a>
+            <div class="navbar-brand text-primary fw-bold fs-4">Tavrel Vlad</div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,6 +43,67 @@
         </div>
     </nav>
 
-    
+    <div class="container-md" style="padding-top: 25px;"> 
+        <div id="carouselExampleControls" class="carousel slide w-50 mx-auto" data-bs-ride="carousel" >
+            <div class="carousel-inner" style="border-radius: 10px;">
+                <div class="carousel-item active">
+                    <img src="../SudokuImg/1.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../SudokuImg/2.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../SudokuImg/3.png" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div> 
+
+    <div class="container fs-4" style="padding-top: 25px;">
+        <p><a class="text-primary fw-bold" style="text-decoration: none;">Sudoku</a> - is a logic-based, combinatorial number-placement puzzle. In classic Sudoku, 
+            the objective is to fill a 9 x 9 grid with digits so that each column, each row, and each of the nine 3 x 3 subgrids that compose the grid 
+            (also called "boxes", "blocks", or "regions") contain all of the digits from 1 to 9. The puzzle setter provides
+            a partially completed grid, which for a well-posed puzzle has a single solution
+        </p>
+        <p>
+            When you click on the "Settings" button, a settings window opens with the ability to
+             enable or disable the timer, highlight repetitions, highlight the same numbers (all functions are initially enabled).
+        </p>
+        <p>
+            When you click on the "Leaders" button, a window opens with a table of the top 10 players for each difficulty.
+        </p>
+        <p>
+            When you click on the "Play" button, a window with a choice of difficulty opens, after choosing
+             a difficulty, a window with the game opens. To win, you need to fill the 9 by 9 grid with numbers so that
+              each row, column and 3 by 3 grid contains all the numbers from 1 to 9. To enter values in empty cells, 
+              you need to select a cell and enter a number from the keyboard.
+        </p>
+        <p>
+            If you enter an incorrect number, it will be highlighted in red, if the item "Highlight repetitions" 
+            is enabled in the settings, conflicting numbers will be highlighted in a column and/or row and/or grid.
+        </p>
+        <p>
+            When you click on a cell with a number and the item "Highlight identical numbers" is enabled in the 
+            settings, all cells with the corresponding number on the entire playing field will be highlighted.
+        </p>
+        <p>
+            When all the fields are filled in with the “Timer” item enabled in the settings, a window will appear asking you to save your result.
+        </p>
+        <p>
+            To save the result, you need to enter a name (without spaces, no longer than 20 characters) and click on the "Save" button, 
+            after which the result will be entered in the leaderboard, and the user will be returned to the main menu.
+        </p>
+        <p>
+            Pressing the "Exit" button will immediately return the user to the main menu.
+        </p>
+    </div>
 </body>
 </html>
